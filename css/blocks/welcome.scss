@@ -1,0 +1,44 @@
+.welcome {
+    padding: 76px 0 40px 0;
+    background: url('/img/backgrounds/bg_welcome.jpg') center center / cover no-repeat;
+}
+
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.welcome__img {
+    padding-left: 15px;
+    padding-right: 14px;
+}
+
+.welcome__title {
+    color: $orange;
+    text-align: left;
+    padding-top: 148px;
+    line-height: 60px;
+    
+}
+
+.welcome__sub-title {
+    font-family: "Lifehack";
+    color: $white;
+    font-size: 65px;
+    margin-top: 30px;
+}
+
+.welcome__scroll {
+    background: url('../../img/arrow-scroll.png') center center no-repeat;
+    width: 29px;
+    height: 14px;
+    margin-top:95px;
+}

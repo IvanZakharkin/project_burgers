@@ -1,0 +1,61 @@
+.features {
+    background: url('../../img/backgrounds/bg_features.jpg') center center / cover no-repeat;
+    padding: 100px 0 140px 0;
+}
+
+.features__title {
+    margin-bottom: 40px;
+}
+
+.features__list {
+    display: flex;
+    text-align: center;
+}
+
+.features__item {
+    flex-basis: 300px;
+    margin-right: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+.features__icon {
+    margin-bottom: 35px;
+    width:100px;
+    height: 95px;
+    background: url('../../img/icons/sprites.png') no-repeat;
+}
+
+.features__icon_meat {
+    background-position: -10px -210px;
+    width: 97px;
+}
+.features__icon_hand {
+    background-position: -10px -105px;
+    width: 73px;
+}
+.features__icon_natural {
+    width: 88px;
+    background-position: -10px -10px;
+}
+
+
+// .features__pic {
+//     margin-bottom: 35px;
+// }
+
+.features__name {
+    font-family: "Lifehack";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features__description {
+    font-size: 14px;
+    opacity: 0.8;
+}

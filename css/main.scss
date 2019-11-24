@@ -1,0 +1,20 @@
+$black: #2f3234;
+$white: #ffffff;
+$orange: #f9b43b;
+$red: #e45028;
+$gray: #2f3234;
+
+
+@import  'addition/normalize';
+@import  'addition/base';
+@import  'addition/fonts';
+
+
+@import  "./blocks/features";
+@import  "./blocks/title";
+@import  "./blocks/header";
+@import  "./blocks/welcome";
+@import  "./blocks/menu";
+@import  "./blocks/btn";
+@import  "./blocks/reviews";
+@import  "./blocks/navigation";
