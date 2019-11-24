@@ -1,6 +1,6 @@
 .welcome {
     padding: 76px 0 40px 0;
-    background: url('/img/backgrounds/bg_welcome.jpg') center center / cover no-repeat;
+    background: url('../img/backgrounds/bg_welcome.jpg') center center / cover no-repeat;
 }
 
 .welcome__container {
@@ -37,7 +37,7 @@
 }
 
 .welcome__scroll {
-    background: url('../../img/arrow-scroll.png') center center no-repeat;
+    background: url('../img/arrow-scroll.png') center center no-repeat;
     width: 29px;
     height: 14px;
     margin-top:95px;
