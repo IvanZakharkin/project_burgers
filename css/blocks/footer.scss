@@ -1,0 +1,42 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $black;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    padding: 1% 0;
+
+    @include phones {
+        flex-direction: column;
+    }
+
+}
+
+.footer__left {
+    justify-content: flex-start;
+
+    @include phones {
+       margin-bottom: 10px;
+    }
+}
+.footer__right {
+    justify-content: flex-end;
+}
+
+
+.footer__left, .footer__right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+

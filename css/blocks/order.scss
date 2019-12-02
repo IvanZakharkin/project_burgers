@@ -1,0 +1,12 @@
+.order {
+    background: url('../img/backgrounds/bg_order.jpg') center center / cover no-repeat;
+}
+
+.order__title {
+    color: $orange;
+    margin-bottom: 44px;
+
+    @include tablets {
+        font-size: rem(50px);
+    }
+}

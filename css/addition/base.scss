@@ -2,6 +2,17 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
+}
+
 
 html,
 body {
@@ -10,7 +21,7 @@ body {
   font-weight: 300;
   color: $black;
   height: 100%;
-
+  line-height: 1.16;
 }
 
 h1,
@@ -45,27 +56,33 @@ ul li {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
+  @include tablets{
+    min-height: inherit;
+  }
+  // @include phones {
+  //   height: auto;
+  // }
 }
 
 .container_w-700 {
-  max-width: 698px;
+  max-width: rem(698px);
 }
 
 
 .container_width_1100 {
-  max-width: 1100px;
+  max-width: rem(1100px);
 }
 
-.container_pl_pr_180px {
-  padding: 0 180px;
-}
+
 .wrapper {
   overflow:hidden;
-  min-width:1060px;
+  // min-width:rem(1060px);
   min-height: 100%;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,49 @@
+.nav {
+    display:flex;
+    align-items: center;
+
+   
+    @include tablets {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    // white-space: nowrap;
+}
+
+.nav__item {
+    margin-right: rem(15px);
+    display:flex;
+    align-items: center;
+
+    &:after {
+        content: "";
+        display: block;
+        width: rem(4px);
+        height: rem(4px);
+        border-radius: 50%;
+        background: $white;
+        margin-left: rem(15px);
+    }
+
+    &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    font-weight: 500;
+
+    @media (max-width: 960px) {
+        font-size: rem(11px);
+    }
+    
+}

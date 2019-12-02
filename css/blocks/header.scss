@@ -1,14 +1,23 @@
 .header {
     position: absolute;
     width: 100%;
-    padding-top: 12px;
+    padding-top: rem(12px);
+}
+
+@media screen and (max-width: 960px) {
+    // .header {
+    //     width: 70%;
+    // }
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    
 }
 
 .header__menu {
-    margin-left: 70px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }

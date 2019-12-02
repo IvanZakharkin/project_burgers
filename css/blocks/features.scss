@@ -1,61 +1,85 @@
 .features {
     background: url('../img/backgrounds/bg_features.jpg') center center / cover no-repeat;
-    padding: 100px 0 140px 0;
+    padding: rem(100px) 0 rem(140px) 0;
 }
 
 .features__title {
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 
 .features__list {
     display: flex;
     text-align: center;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .features__item {
-    flex-basis: 300px;
-    margin-right: 20px;
-    line-height: 24px;
+    width: rem(300px);
+    // margin-right: rem(20px);
+    line-height: rem(24px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: rem(0px);
+    }
+
+    @include phones {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: rem(51px);
+        text-align: left;
     }
 }
 .features__icon {
-    margin-bottom: 35px;
-    width:100px;
-    height: 95px;
-    background: url('../img/icons/sprites.png') no-repeat;
+    margin-bottom: rem(35px);
+    width:rem(100px);
+    height: rem(95px);
+    // background: url('../img/icons/sprites.png') no-repeat;
+
+    @include phones {
+        margin: 0 rem(28px) 0 0;
+
+    }
 }
 
 .features__icon_meat {
-    background-position: -10px -210px;
-    width: 97px;
+    background-position: rem(-10px) rem(-210px);
+
 }
 .features__icon_hand {
-    background-position: -10px -105px;
-    width: 73px;
+    background-position: rem(-10px) rem(-105px);
+
 }
 .features__icon_natural {
-    width: 88px;
-    background-position: -10px -10px;
+
+    background-position: rem(-10px) rem(-10px);
 }
 
 
 // .features__pic {
-//     margin-bottom: 35px;
+//     margin-bottom: rem(35px);
 // }
+
+
+.features__description {
+    flex:1;
+}
 
 .features__name {
     font-family: "Lifehack";
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: rem(24px);
+    margin-bottom: rem(10px);
 }
 
-.features__description {
-    font-size: 14px;
+.features__text {
+    font-size: rem(14px);
     opacity: 0.8;
 }
+

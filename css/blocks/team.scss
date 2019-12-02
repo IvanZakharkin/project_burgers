@@ -1,0 +1,152 @@
+.team {
+    background: url('../img/backgrounds/bg_team.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.team__content {
+    background-color: rgba($color: $black, $alpha: 0.93);
+    position: absolute;
+    left: 50%;
+    top:0;
+    right:0;
+    bottom: 0;
+    // padding: 5% 2% 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        left: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.team__title {
+    color: $orange;
+
+    @include tablets {
+       margin-bottom: 45px;
+    }
+    
+}
+
+.team__list {
+    display: flex;
+    flex-direction: column;
+
+    @include tablets {
+        align-items: center;
+    }
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(30px);
+
+    
+    @include tablets {
+        align-items: center;
+    }
+    
+}
+
+.team__main { 
+    display:flex;
+    height: 0;
+    font-size: 0;
+    padding-top: rem(17px);
+    align-items: center;
+    padding-left: 1.25rem;
+    overflow: hidden;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+   
+}
+
+.team__photo {
+    width:rem(100px);
+    height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include tablets {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.team__photo-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+    
+
+.team__name {
+    font-family: "Gagalin";
+    font-size: rem(14px);
+    color: $white;
+    padding-left: rem(20px);
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: rem(10px);
+        height: rem(10px);
+        background: url('../img/team/arrow_bottom.png') center center no-repeat;
+        position: absolute;
+        top: rem(5px);
+        left: 0;
+    }
+
+    @include tablets {
+        font-size: rem(25px);
+        margin-bottom: rem(15px);
+    }
+
+}
+
+.team__description {
+    color: $white;
+    margin-left: rem(20px);
+    flex: 1;
+
+    @include tablets {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.team__job-title {
+    font-weight: bold;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+
+        margin-bottom: rem(20px);
+    }
+}
+
+.team__item_active  .team__name {
+    color:$orange;
+
+}
+
+.team__item_active .team__main {
+    height: auto;
+    font-size: rem(14px);
+}
+.team__item_active .team__photo {
+    height: rem(100px);
+}

@@ -1,0 +1,12 @@
+.contacts {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.contacts__phone {
+    color: $red;
+    text-decoration: none;
+    font-weight: bold;
+}

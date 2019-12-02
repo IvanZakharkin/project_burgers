@@ -1,0 +1,163 @@
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form__col {
+    width: 50%;
+    margin-right: rem(19px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        width: 70%;
+        margin-right: 0;
+    }
+    @include phones {
+        width: 95%;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(19px);
+    color: $white;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.form__block-title {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    padding: rem(7px) rem(21px);
+    border-radius: rem(5px);
+    border: rem(2px) solid transparent;
+    outline:none;
+
+    &:focus {
+        border: rem(2px) solid $orange;
+    }
+}
+
+.form__input_textarea {
+    height: rem(109px);
+};
+
+.form__radio {
+    display: flex;
+    margin-right: rem(19px);
+    color: $white;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.form__radio-elem:checked, 
+.form__radio-elem:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+
+}
+
+.form__radio-title {
+    position: relative;
+    padding-left: rem(25px);
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $white;
+        background-color: $white;
+        border-radius: 100%;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 4.5px;
+        width: 7px;
+        height: 7px;
+        // border: 1px solid black;
+        background-color: $red;
+        border-radius: 100%;
+        opacity:0;
+    }
+}
+
+.form__radio-elem:checked ~ .form__radio-title:after {
+    opacity:1;
+    transition: all 0.2s ease;
+  }
+
+.form__checkbox {
+    display: flex;
+    color: $white;
+    position: relative;
+}
+
+.form__checkbox-title {
+    position: relative;
+    padding-left: rem(25px);
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $white;
+        background-color: $white;
+        border-radius: 3px;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 4.5px;
+        width: 7px;
+        height: 7px;
+        // border: 1px solid black;
+        background-color: $red;
+        border-radius: 100%;
+        opacity:0;
+    }
+}
+
+
+.form__checkbox-elem {
+    position: absolute;
+    left: -9999px;
+}

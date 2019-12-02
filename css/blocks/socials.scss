@@ -1,0 +1,40 @@
+.socials__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials__item {
+    margin-right: 20px;
+}
+
+
+
+.socials__icon {
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.socials__icon-fb {
+    width: 20px;
+    height: 20px; 
+}
+
+
+.socials__icon-vk {
+    width: 20px;
+    height: 20px;
+}
+
+
+.socials__icon-twitter{
+    width: 20px;
+    height: 16px;
+}
+
+.socials__icon-instagramm {
+    width: 20px;
+    height: 20px;
+}
+
