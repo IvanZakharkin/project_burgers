@@ -17,7 +17,11 @@
 }
 
 .header__menu {
-    margin-left: auto;
+    margin-left: 67px;
     display: flex;
     align-items: center;
+
+    @include tablets {
+        margin-left: auto;
+    }
 }

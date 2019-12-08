@@ -1,0 +1,20 @@
+.scroll {
+    width: rem(29px);
+    height: rem(14px);
+
+}
+
+.scroll_left {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    
+}
+.scroll_right{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+

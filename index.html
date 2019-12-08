@@ -7,37 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+
+
+
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <svg width="98.265px" height="74.317px">
-                    <use xlink:href="./img/icons/sprite.svg#logo"></use>
-                </svg>
+                <div class="logo">
+                    <svg class='logo__img'>
+                        <use xlink:href="./img/icons/sprite.svg#logo"></use>
+                    </svg>
+                </div>
+
                 <div class="header__menu">
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Бургеры</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Команда</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Меню</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Как мы работаем</a></li>
+                            <li class="nav__item"><a href="#features" class="nav__link">О нас</a></li>
+                            <li class="nav__item"><a href="#burgers" class="nav__link">Бургеры</a></li>
+                            <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
+                            <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                            <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                            <li class="nav__item"><a href="#maps" class="nav__link">Как мы работаем</a></li>
                             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                         </ul>
                     </nav>
 
                     <a href="" class="btn">Заказать</a>
                     <a class="hamburger-menu" href="">
+                        <span class="hamburger-menu__line"></span>
                     </a>
 
                 </div>
 
 
         </header>
-        <section class="welcome section">
+        <section id="welcome" class="welcome section">
             <div class="container welcome__container">
                 <div class="welcome__content">
                     <div class="welcome__burger">
@@ -51,15 +58,15 @@
                         </div>
                     </h1>
                 </div>
-                <a href="" class="welcome__scroll">
-                    <svg width="28.685px" height="14.479px">
+                <a href="" class="scroll welcome__scroll">
+                    <svg>
                         <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                     </svg>
                 </a>
             </div>
         </section>
 
-        <section class="features section">
+        <section id="features" class="features section">
             <div class="container">
                 <h2 class="title features__title">Мы лучшие</h2>
                 <ul class="features__list">
@@ -79,7 +86,8 @@
                     </li>
                     <li class="features__item">
                         <div class="features__icon features__icon_hand">
-                            <svg width="96.428px" height="89.246px">
+                            <svg width="96.428px" height="89.246px" viewBox="0 0 96.428 89.246"
+                                preserveAspectRatio="xMidYMid meet">
                                 <use xlink:href="./img/icons/sprite.svg#hand"></use>
                             </svg>
 
@@ -110,7 +118,123 @@
                 </ul>
             </div>
         </section>
-        <div class="reviews section">
+
+        <section id="burgers" class="section burgers">
+            <a href="" class="scroll scroll_left">
+                <svg>
+                    <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
+                </svg>
+            </a>
+            <a href="" class="scroll scroll_right">
+                <svg>
+                    <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
+                </svg>
+            </a>
+            <div class="container burgers__container">
+                <div class="burgers__visual-part">
+                    <div class="burgers__ingredients">
+                        <div class="burgers__ingredients-img">
+                            <svg viewBox="0 0 45.748 44.625" class='burgers__ingredients-pic'>
+                                <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                            </svg>
+
+                        </div>
+                        <div class="burgers__ingredients-text">Состав</div>
+                        <ul class="burgers__ingredients-list">
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                            <li class="burgers__ingredients-item">
+                                <div class="burgers__ingredients-icon">
+                                    <svg class="burgers__ingredients-pic">
+                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <div class="burgers__ingredients-title">Говядина</div>
+                                <div class="burgers__ingredients-weight">300 г</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burgers__pic">
+                        <img src="./img/burgers-slider/black_burger.png" alt="" class="burgers__img">
+                    </div>
+                    <div class="burgers__energy-value">
+                        <div class="burgers__energy-value-img">
+                            <svg viewBox="0 0 60 60.178" class="burgers__energy-value-pic">
+                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                            </svg>
+                        </div>
+                        <div class="burgers__energy-value-text">Ккал</div>
+                        <div class="burgers__energy-value-number">1200</div>
+                    </div>
+                </div>
+                <div class="burgers__text-part">
+                    <h2 class="title burgers__title">Dark Beef Burger</h2>
+                    <div class="burgers__desc">
+                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с
+                            добавлением экзотического соуса чураско.</p>
+                    </div>
+                    <div class="burgers__order-info">
+                        <div class="burgers__price"> <span class="text-fs-72">500</span>рублей</div>
+                        <a href="" class="btn btn_margin_top_15">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="reviews" class="reviews section">
             <ul class="reviews__list">
                 <li class="reviews__item">
                     <img src="./img/reviews/avatar1.jpg" alt="" class="reviews__avatar">
@@ -233,7 +357,7 @@
             </ul>
         </div>
 
-        <section class="section team">
+        <section id="team" class="section team">
             <div class="team__content">
                 <h2 class="title team__title">Команда</h2>
                 <ul class="team__list">
@@ -308,38 +432,51 @@
                 </ul>
             </div>
         </section>
-        <section class="section menu">
+        <section id="menu" class="section menu">
+            <h2 class="title menu__title">
+                Меню
+            </h2>
             <div class="menu__content">
                 <ul class="menu__list">
-                    <li class="menu__item">
+                    <li class="menu__item ">
                         <a href="#" class="menu__name">
                             <span class="menu__rotate-text">Для мясоедов</span>
                         </a>
-                        
-                        <div class="menu__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo ducimus quis exercitationem quibusdam? Qui, harum asperiores.
+
+                        <div class="menu__list-content">
+
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit
+                            voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo
+                            ducimus quis exercitationem quibusdam? Qui, harum asperiores.
+
+                        </div>
+                    </li>
+                    <li class="menu__item menu__item_active">
+                        <a href="#" class="menu__name">
+                            <span class="menu__rotate-text">Для мясоедов</span>
+                        </a>
+                        <div class="menu__list-content">
+
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit
+                            voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo
+                            ducimus quis exercitationem quibusdam? Qui, harum asperiores.
+
                         </div>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__name">
                             <span class="menu__rotate-text">Для мясоедов</span>
                         </a>
-                        <div class="menu__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo ducimus quis exercitationem quibusdam? Qui, harum asperiores.
-                        </div>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__name">
-                            <span class="menu__rotate-text">Для мясоедов</span>
-                        </a>
-                        <div class="menu__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo ducimus quis exercitationem quibusdam? Qui, harum asperiores.
+                        <div class="menu__list-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate, expedita velit
+                            voluptatum perferendis pariatur quam atque recusandae cumque temporibus odio voluptates quo
+                            ducimus quis exercitationem quibusdam? Qui, harum asperiores.
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="section order">
+        <section id="order" class="section order">
             <div class="container">
                 <h2 class="title order__title">Закажите доставку</h2>
                 <form action="" class="form">
@@ -389,18 +526,20 @@
                         </div>
                         <div class="form__row">
                             <label class="form__radio">
-                                <div class="form__radio-title">Потребуется сдача</div>
+
                                 <input type="radio" class="form__radio-elem" name="payment-type">
+                                <div class="form__radio-title">Потребуется сдача</div>
                             </label>
                             <label class="form__radio">
-                                <div class="form__radio-title">Оплата по карте</div>
+
                                 <input type="radio" class="form__radio-elem" name="payment-type">
+                                <div class="form__radio-title">Оплата по карте</div>
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__checkbox">
-                                <div class="form__checkbox-title">Не перезванивать</div>
                                 <input type="checkbox" class="form__checkbox-elem">
+                                <div class="form__checkbox-title">Не перезванивать</div>
                             </label>
                         </div>
                         <div class="form__row">
@@ -413,7 +552,7 @@
                 </form>
             </div>
         </section>
-        <section class="section maps">
+        <section id="maps" class="section maps">
             <div class="maps__yandex"></div>
             <footer class="footer">
                 <div class="container footer__container">
@@ -465,25 +604,22 @@
         <div class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item_active">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#features" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#burgers" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#team" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#menu" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#reviews" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
-                </li>
-                <li class="navigation__item">
-                    <a href="" class="navigation__link"></a>
+                    <a href="#maps" class="navigation__link"></a>
                 </li>
                 <li class="navigation__item">
                     <a href="" class="navigation__link"></a>
@@ -495,9 +631,82 @@
                     <a href="" class="navigation__link"></a>
                 </li>
 
+
+
+
+
+
+
             </ul>
         </div>
     </div>
+    <div class="modal"></div>
+    <script type="text/javascript">
+        const burgerMenu = document.querySelector(".hamburger-menu");
+        const modal = document.querySelector(".modal");
+        const nav = document.querySelector(".nav");
+        burgerMenu.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            if (burgerMenu.classList.contains("hamburger-menu_active")) {
+                burgerMenu.classList.remove("hamburger-menu_active");
+                modal.classList.remove("modal_active");
+                nav.style.top = '-9999px';
+                document.body.removeAttribute('style');
+            } else {
+                burgerMenu.classList.add("hamburger-menu_active");
+                modal.classList.add("modal_active");
+                nav.style.top = '50%';
+                document.body.style.overflow = "hidden";
+            }
+        })
+
+        modal.addEventListener('click', (event) => {
+            if (modal.classList.contains("modal_active")) {
+                burgerMenu.classList.remove("hamburger-menu_active");
+                modal.classList.remove("modal_active");
+                nav.style.top = '-9999px';
+                document.body.removeAttribute('style');
+            }
+        })
+
+
+        //section team
+        const teamItems = document.querySelectorAll('.team__item');
+        for (let i = 0; i < teamItems.length; i += 1) {
+            teamItems[i].addEventListener("click", e => {
+                if (!teamItems[i].classList.contains("team__item_active")) {
+                    for (let j = 0; j < teamItems.length; j += 1) {
+                        teamItems[j].classList.remove("team__item_active");
+                    }
+                }
+                teamItems[i].classList.toggle("team__item_active");
+            })
+        };
+
+
+        //section menu
+        const menuItems = document.querySelectorAll('.menu__item');
+        for (let i = 0; i < menuItems.length; i += 1) {
+            menuItems[i].addEventListener("click", e => {
+                e.preventDefault();
+                if (!teamItems[i].classList.contains("menu__item_active")) {
+                    for (let j = 0; j < menuItems.length; j += 1) {
+                        menuItems[j].classList.remove("menu__item_active");
+                    }
+                }
+                menuItems[i].classList.toggle("menu__item_active");
+            })
+        };
+
+        //section burgers
+        const ingredients = document.querySelector('.burgers__ingredients');
+        ingredients.addEventListener("click", () => {
+            ingredients.classList.toggle('burgers__ingredients_active');
+        })
+
+
+    </script>
 </body>
 
 </html>

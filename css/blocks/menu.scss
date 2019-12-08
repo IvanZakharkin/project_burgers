@@ -4,16 +4,23 @@
 }
 
 .menu__content {
-    
     position: absolute;
     top:0;
     right:0;
     bottom: 0;
+    max-width: 65%;
+
+    @include tablets {
+        max-width: 100%;
+    }
 }
 
-.mwenu__title {
-    color: $orange;
-    
+.menu__title {
+    color: $white;
+    position: absolute;
+    top: 9%;
+    left: 15%;
+
 }
 
 .menu__list {
@@ -25,8 +32,7 @@
 
 
 .menu__item {
-    
-    // width: 33.333%;
+    display: flex;
 }
 .menu__name {
 display: block;
@@ -53,28 +59,45 @@ text-decoration: none;
 }
 
 .menu__rotate-text {
-    display: block;
     position: absolute;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     font-size: 40px;
     font-family: "Gagalin";
-    transform: rotate(-90deg) translateX(94px);
+    line-height: 80px;
+    transform: rotate(-90deg);
     white-space: nowrap;
     z-index: 50;
+    transform-origin: 0 0;
 }
 
-.menu__text {
-    width: 0;
-    font-size: 0;
-    height: 100%;
+.menu__list-content {
+    max-width: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba($color: $black, $alpha: 0.93);
     color: $white;
-}
-
-.menu__button {
-    
-}
-
-.menu__item_active .menu__text {
-    width: auto;
     font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    flex: 1;
+    transition: 1s;
+    @include phones {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+
+.menu__item_active .menu__list-content {
+    max-width: 540px;
+    padding: 7% 5%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.menu__item_active .menu__name {
+   color: $orange;
 }

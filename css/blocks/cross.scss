@@ -1,0 +1,18 @@
+.cross {
+
+    &:before, &:after {
+        width: rem(24px);
+        height: rem(4px);
+        background: #fff;
+    }
+
+    &:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+}
+
