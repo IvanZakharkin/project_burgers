@@ -7,8 +7,59 @@
       right: 0;
       background: rgba($color: #2f3234, $alpha: 0.93);
       visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
 }
 
 .modal_active {
     visibility: visible;
+    opacity: 1;
+}
+
+.modal-container {
+    background: $white;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-order__content {
+    margin-bottom: 20px;
+}
+
+.modal-reviews__container {
+    position: relative;
+    width: 460px;
+    align-items: flex-start;
+}
+
+
+.modal-reviews__author {
+    color:$black;
+    font-size: rem(14px);
+    font-family: 'Gagalin';
+    margin-bottom: rem(20px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-reviews__content {
+    color: $black;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    line-height: 1.41;
+    margin-bottom: rem(15px);
+}
+
+.modal-reviews__close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
 }

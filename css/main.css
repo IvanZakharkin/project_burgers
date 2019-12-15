@@ -429,8 +429,7 @@ ul li {
   src: url("../fonts/lifehack_medium.woff2") format("woff2"), url("../fonts/lifehack_medium.woff") format("woff"); }
 
 .features {
-  background: url("../img/backgrounds/bg_features.jpg") center center/cover no-repeat;
-  padding: 6.25rem 0 8.75rem 0; }
+  background: url("../img/backgrounds/bg_features.jpg") center center/cover no-repeat; }
 
 .features__title {
   margin-bottom: 2.5rem; }
@@ -775,11 +774,31 @@ ul li {
     .reviews__text {
       display: none; } }
 
+.reviews__detail-text {
+  visibility: hidden;
+  opacity: 0;
+  height: 0; }
+
 .reviews__item:hover .reviews__hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 2; }
+
+.reviews__item_active .reviews__name {
+  color: #2f3234; }
+
+.reviews__item_active .reviews__text {
+  display: none; }
+
+.reviews__item_active .reviews__detail-text {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  color: #2f3234; }
+
+.reviews__item_active .btn {
+  display: none; }
 
 .navigation {
   position: fixed;
@@ -861,7 +880,7 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
 
 .form__block {
   -webkit-box-flex: 1;
@@ -873,7 +892,7 @@ ul li {
     margin-right: 0; }
 
 .form__block-title {
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
 
 .form__input {
   width: 100%;
@@ -985,15 +1004,19 @@ ul li {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
+.form__block-error {
+  color: #f9b43b;
+  font-weight: bold; }
+
 .order {
   background: url("../img/backgrounds/bg_order.jpg") center center/cover no-repeat; }
 
 .order__title {
   color: #f9b43b;
-  margin-bottom: 44px; }
+  margin-bottom: 2.75rem; }
   @media screen and (max-width: 768px) {
     .order__title {
-      font-size: 3.125rem; } }
+      font-size: 2.625rem; } }
 
 .maps {
   position: relative; }
@@ -1135,9 +1158,9 @@ ul li {
   -webkit-transition-property: max-height;
   -o-transition-property: max-height;
   transition-property: max-height;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
   @media screen and (max-width: 768px) {
     .team__main {
       -webkit-box-orient: vertical;
@@ -1429,12 +1452,31 @@ ul li {
   background: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%); }
 
 .burgers__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .burgers__container {
-      max-width: 35.625rem;
+      max-width: 35.625rem; } }
+
+.burgers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s; }
+
+.burgers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .burgers__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1582,10 +1624,13 @@ ul li {
 
 .burgers__pic {
   width: 100%;
-  padding: 3.75rem 0 2.5rem; }
+  padding: 5rem 0 2.5rem; }
   @media screen and (max-width: 768px) {
     .burgers__pic {
       width: 80%; } }
+  @media screen and (max-width: 480px) {
+    .burgers__pic {
+      padding-bottom: 0rem; } }
 
 .burgers__img {
   width: 100%; }
@@ -1666,10 +1711,69 @@ ul li {
   left: 0;
   right: 0;
   background: rgba(47, 50, 52, 0.93);
-  visibility: hidden; }
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0; }
 
 .modal_active {
-  visibility: visible; }
+  visibility: visible;
+  opacity: 1; }
+
+.modal-container {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.modal-order__content {
+  margin-bottom: 20px; }
+
+.modal-reviews__container {
+  position: relative;
+  width: 460px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.modal-reviews__author {
+  color: #2f3234;
+  font-size: 0.875rem;
+  font-family: 'Gagalin';
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.modal-reviews__content {
+  color: #2f3234;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  line-height: 1.41;
+  margin-bottom: 0.9375rem; }
+
+.modal-reviews__close {
+  position: absolute;
+  top: 25px;
+  right: 35px; }
 
 .scroll {
   width: 1.8125rem;
@@ -1681,7 +1785,8 @@ ul li {
   transform: rotate(-90deg);
   position: absolute;
   top: 50%;
-  right: 2%; }
+  right: 2%;
+  z-index: 10; }
 
 .scroll_right {
   -webkit-transform: rotate(90deg);
@@ -1689,4 +1794,36 @@ ul li {
   transform: rotate(90deg);
   position: absolute;
   top: 50%;
-  left: 2%; }
+  left: 2%;
+  z-index: 10; }
+
+.btn-cross {
+  display: block; }
+
+.btn-cross__line {
+  position: relative; }
+
+.btn-cross__line:before,
+.btn-cross__line:after {
+  background: red;
+  opacity: 0.5;
+  width: 1.5rem;
+  height: 0.25rem;
+  border-radius: 0.1875rem;
+  display: block;
+  content: "";
+  position: absolute; }
+
+.btn-cross__line:before:hover,
+.btn-cross__line:after:hover {
+  opacity: 1; }
+
+.btn-cross__line:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.btn-cross__line:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }

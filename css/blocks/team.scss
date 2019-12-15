@@ -62,7 +62,7 @@
     opacity: 0;
     max-height: 0;
     transition-property: max-height;
-    transition: 0.3s;
+    transition: 1s;
     @include tablets {
         flex-direction: column;
         padding: 0;

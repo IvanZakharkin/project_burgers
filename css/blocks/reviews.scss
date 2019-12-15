@@ -86,6 +86,12 @@
            display: none;
         }
     }
+
+    &__detail-text {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
     
 }
 
@@ -93,3 +99,27 @@
     display: flex;
     z-index: 2;
 }
+
+.reviews__item_active{
+
+    .reviews__name {
+        color: $black;
+    }
+
+    .reviews__text{
+        display: none;
+    }
+
+    .reviews__detail-text{
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        color: $black;
+    }
+
+    .btn {
+        display: none;
+    }
+
+
+} 

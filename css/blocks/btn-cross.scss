@@ -1,0 +1,33 @@
+.btn-cross {
+    display: block;
+
+}
+
+.btn-cross__line {
+    position: relative;
+}
+
+.btn-cross__line:before, 
+.btn-cross__line:after {
+    background: red;
+    opacity: 0.5;
+    width: rem(24px);
+    height: rem(4px);
+    border-radius: 0.1875rem;
+    display: block;
+    content: "";
+    position: absolute;   
+}
+
+.btn-cross__line:before:hover, 
+.btn-cross__line:after:hover {
+    opacity: 1;
+} 
+
+.btn-cross__line:before{
+    transform: rotate(45deg);
+}
+.btn-cross__line:after{
+    transform: rotate(-45deg);
+}
+

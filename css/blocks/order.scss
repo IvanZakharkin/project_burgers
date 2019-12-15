@@ -4,9 +4,9 @@
 
 .order__title {
     color: $orange;
-    margin-bottom: 44px;
+    margin-bottom: rem(44px);
 
     @include tablets {
-        font-size: rem(50px);
+        font-size: rem(42px);
     }
 }
