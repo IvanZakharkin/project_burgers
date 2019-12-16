@@ -14,7 +14,7 @@
 .burgers__list{
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     // width: auto;
     transition: right 0.3s;
@@ -23,8 +23,8 @@
 .burgers__item {
     display: flex;
     width: 100%;
-    // flex-shrink: 0;
-    // flex-grow: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
     @include tablets {
         flex-direction: column;
         align-items: center;

@@ -1464,7 +1464,6 @@ ul li {
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  overflow: hidden;
   position: relative;
   -webkit-transition: right 0.3s;
   -o-transition: right 0.3s;
@@ -1474,7 +1473,12 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0; }
   @media screen and (max-width: 768px) {
     .burgers__item {
       -webkit-box-orient: vertical;

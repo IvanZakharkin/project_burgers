@@ -7,7 +7,7 @@ const burgers = document.querySelectorAll(".burgers__item");
 const container = document.querySelector(".burgers__container");
 const widthContainer = parseInt(window.getComputedStyle(container).width);
 const amountBurgers = burgers.length;
-burgersList.style.width = widthContainer * amountBurgers + "px";
+// burgersList.style.width = widthContainer * amountBurgers + "px";
 burgersList.style.right = 0 + "px";
 
 const scrollRight = document.querySelector(".scroll_right");
