@@ -33,6 +33,7 @@
 
 .menu__item {
     display: flex;
+    
 }
 .menu__name {
 display: block;
@@ -41,7 +42,6 @@ bottom: 0;
 width: rem(80px);
 height: 100%;
 color:white;
-background: url('../img/backgrounds/bg_menu.jpg') center center / cover no-repeat;
 text-decoration: none;
     &:after {
         content: '';
@@ -53,9 +53,16 @@ text-decoration: none;
         right: 0;
         background-color: rgba($color: black, $alpha: 0.5);
     }
-    
-    
+}
 
+.menu__name_bg_meat {
+    background: url('../img/backgrounds/menu_item_bg.jpg') center center / cover no-repeat;
+}
+.menu__name_bg_vegan {
+    background: url('../img/backgrounds/menu_item_bg2.jpg') center center / cover no-repeat;
+}
+.menu__name_bg_diet {
+    background: url('../img/backgrounds/menu_item_bg3.jpg') center center / cover no-repeat;
 }
 
 .menu__rotate-text {
