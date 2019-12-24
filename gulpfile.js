@@ -44,9 +44,12 @@ task("styles", () => {
     .pipe(concat('main.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+        cascade: false
+      }))
     .pipe(gcmq())
     .pipe(cleanCSS())
-    .pipe(dest('dist'))
+    .pipe(dest('./'))
     // .pipe(reload({ stream: true }));;
 })
 

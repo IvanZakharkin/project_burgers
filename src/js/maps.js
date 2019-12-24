@@ -20,7 +20,7 @@ function init() {
         }, 
         {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-marker.png',
+        iconImageHref: './img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-15, -27],
         
@@ -32,7 +32,7 @@ function init() {
         }, 
         {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-marker.png',
+        iconImageHref: './img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-15, -27]
     });
@@ -43,7 +43,7 @@ function init() {
         }, 
         {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-marker.png',
+        iconImageHref: './img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-15, -27]
     });
@@ -54,7 +54,7 @@ function init() {
         }, 
         {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-marker.png',
+        iconImageHref: './img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-15, -27]
     });
