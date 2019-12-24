@@ -24,6 +24,7 @@ body {
   line-height: 1.16;
 }
 
+
 h1,
 h2,
 h3,
@@ -81,11 +82,21 @@ ul li {
 
 
 .wrapper {
-  overflow:hidden;
+  // overflow:hidden;
   // min-width:rem(1060px);
-  min-height: 100%;
+  // min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  position: relative;
+  translate: transformY(0%);
+  transition: transform 1s;
 }
 
 .wrapper__content {

@@ -1,8 +1,8 @@
 const form = document.querySelector('.form');
 const btnOrder = document.querySelector('.btn_order');
-const modalOrder = document.querySelector('.modal-order')
-const closeBtn = modalOrder.querySelector('.modal-order__close')
-const modalOrderContent = modalOrder.querySelector('.modal-order__content')
+const modalOrder = document.querySelector('.modal-order');
+const closeBtn = modalOrder.querySelector('.modal-order__close');
+const modalOrderContent = modalOrder.querySelector('.modal-order__content');
 
 
 

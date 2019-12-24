@@ -1,5 +1,5 @@
 .btn-cross {
-    display: block;
+    // display: block;
 
 }
 
@@ -9,8 +9,7 @@
 
 .btn-cross__line:before, 
 .btn-cross__line:after {
-    background: red;
-    opacity: 0.5;
+    background: rgb(255, 70, 70);
     width: rem(24px);
     height: rem(4px);
     border-radius: 0.1875rem;
@@ -31,3 +30,7 @@
     transform: rotate(-45deg);
 }
 
+.btn-cross_white .btn-cross__line:before, 
+.btn-cross_white .btn-cross__line:after {
+    background: $white;
+}

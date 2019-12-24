@@ -13,6 +13,10 @@
     @include tablets {
         max-width: 100%;
     }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .menu__title {
@@ -25,6 +29,7 @@
 
 .menu__list {
     display: flex;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
     
@@ -53,6 +58,10 @@ text-decoration: none;
         right: 0;
         background-color: rgba($color: black, $alpha: 0.5);
     }
+
+    @include phones {
+        width: rem(75px);
+    }
 }
 
 .menu__name_bg_meat {
@@ -70,7 +79,7 @@ text-decoration: none;
     left: 0px;
     bottom: 0px;
     right: 0px;
-    font-size: 40px;
+    font-size: rem(40px);
     font-family: "Gagalin";
     line-height: 80px;
     transform: rotate(-90deg);
@@ -96,15 +105,36 @@ text-decoration: none;
     }
 }
 
-
+.menu__item_active {
+    @include phones {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: 500;
+    }
+}
 
 .menu__item_active .menu__list-content {
     max-width: 540px;
-    padding: 7% 5%;
+    padding: 13% 5%;
     visibility: visible;
     opacity: 1;
     transition: 1s;
 }
 .menu__item_active .menu__name {
    color: $orange;
+}
+
+.menu__close-btn {
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+
 }
