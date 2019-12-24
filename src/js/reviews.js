@@ -33,7 +33,7 @@
 //     }$
 
 // })
-
+;(function() {
 const modalReviews = $(".modal-reviews"),
     closeBtnCross = $(".modal-reviews__close"),
     textReviewModal = $(".modal-reviews__content"),
@@ -60,3 +60,5 @@ modalReviews.on("click", function(e) {
         closeBtnCross.click();
     }
 })
+
+})()

@@ -68,6 +68,7 @@
     
 //     })
 // })
+;(function() {
 function createDots() {
     $(".section").each(function(){
         const $this = $(this);
@@ -82,14 +83,14 @@ function createDots() {
     
 )};
 createDots();
-$(".navigation__item").eq(0).addClass("navigation__item_active");
+$("body").find(".navigation__item").eq(0).addClass("navigation__item_active");
 
 
 
 const 
     container = $(".maincontent"),
-    sections = $(".section", container);
-    navigationItems = $(".navigation__item");
+    sections = $(".section", container),
+    navigationItems = $("body").find(".navigation__item");
     let inScroll = false;
 
 const performTransition = sectionNum => {
@@ -182,3 +183,4 @@ if(md.mobile()) {
         }
       });
 }
+})()

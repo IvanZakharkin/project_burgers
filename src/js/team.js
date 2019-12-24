@@ -9,10 +9,12 @@
 //         teamItems[i].classList.toggle("team__item_active");
 //     })
 // };
-
+;(function() {
 const teamItems = $(".team__item");
 teamItems.on("click", function () {
     console.log($(this));
         $(this).siblings().removeClass('team__item_active');
         $(this).toggleClass("team__item_active");
 });
+
+})()

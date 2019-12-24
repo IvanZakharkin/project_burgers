@@ -11,17 +11,19 @@
 
 //seeking: срабатывает, когда пользователь начинает перемещать курсор по шкале воспроизведения для перемещения к новому месту аудио- или видеофайла
 //seeked: срабатывает, когда пользователь завершил перемещение к новому месту на шкале воспроизведения
-
+;(function() {
 const video = document.querySelector("#player");
 const videoSlider = $(".video__playback-slider");
 const play = $(".video__duration-img");
 const playBig = $(".video__player-img");
 
-$(".play").on("click", function(e) {
-    console.log("123")
-    if (e.targer != "play") return;
+$(".video__duration-play").on("click", function(e) {
     video.play();
-    $(".play").css({"display":"none"})
+
+});
+$(".video__duration-pause").on("click", function(e) {
+    video.pause();
+
 });
 
 $(".video__player").on("click", () => {
@@ -124,8 +126,6 @@ soundControl.val(soundControl.get(0).max);
 
 
 $(".video__sound-img").on("click", e => {
-    const soundValue = soundControl.val();
-
     if (video.volume === 0){
         video.volume = soundLevel;
         soundControl.val(soundLevel * 10);
@@ -136,10 +136,12 @@ $(".video__sound-img").on("click", e => {
         video.volume = 0;
         soundControl.val(0);
         $(".video__sound-img").addClass("mute");
-    }  
+    } 
 })
 
 
 soundControl.on("click", e => {
     video.volume = soundControl.val()/10;
 })
+
+})()

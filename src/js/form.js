@@ -1,3 +1,5 @@
+;(function() {
+
 const form = document.querySelector('.form');
 const btnOrder = document.querySelector('.btn_order');
 const modalOrder = document.querySelector('.modal-order');
@@ -55,3 +57,4 @@ function validateForm(form) {
     }
     return valid;
 }
+})()

@@ -6,13 +6,27 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "jquery-touchswipe": "^1.6.19",
-    "mobile-detect": "^1.4.4"
+    "mobile-detect": "^1.4.4",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.13.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+;(function() {
+
 const burgerMenu = document.querySelector(".hamburger-menu");
 const modal = document.querySelector(".modal-menu");
 const nav = document.querySelector(".nav");
@@ -36,3 +38,4 @@ nav.addEventListener("click", e => {
         // document.body.removeAttribute('style');
     }
 })
+})()

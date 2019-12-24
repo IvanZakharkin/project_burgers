@@ -1,3 +1,4 @@
+;(function() {
 ymaps.ready(init);
 
 
@@ -60,3 +61,4 @@ function init() {
 
     myMap.geoObjects.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4);
 };
+})()
