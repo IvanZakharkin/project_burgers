@@ -63,8 +63,8 @@ task("scripts", () => {
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    // .pipe(uglify())
-    .pipe(dest('dist'))
+    .pipe(uglify())
+    .pipe(dest('./'))
     .pipe(reload({ stream: true }));;
 })
 
