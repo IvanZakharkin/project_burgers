@@ -1,5 +1,5 @@
 .menu {
-    background: url('../img/backgrounds/bg_menu.jpg') center center / cover no-repeat;
+    background: url('./img/backgrounds/bg_menu.jpg') center center / cover no-repeat;
     position: relative;
 }
 
@@ -65,13 +65,13 @@ text-decoration: none;
 }
 
 .menu__name_bg_meat {
-    background: url('../img/backgrounds/menu_item_bg.jpg') center center / cover no-repeat;
+    background: url('./img/backgrounds/menu_item_bg.jpg') center center / cover no-repeat;
 }
 .menu__name_bg_vegan {
-    background: url('../img/backgrounds/menu_item_bg2.jpg') center center / cover no-repeat;
+    background: url('./img/backgrounds/menu_item_bg2.jpg') center center / cover no-repeat;
 }
 .menu__name_bg_diet {
-    background: url('../img/backgrounds/menu_item_bg3.jpg') center center / cover no-repeat;
+    background: url('./img/backgrounds/menu_item_bg3.jpg') center center / cover no-repeat;
 }
 
 .menu__rotate-text {
