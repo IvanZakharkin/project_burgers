@@ -80,4 +80,4 @@ task('server', function() {
 
 watch('./src/css/**/*.scss', series('styles'));
 watch('./src/js/**/*.js', series('scripts'));
-task("default", series('clean', 'clean:main','copy:html', 'styles', 'scripts', 'copy:all'));
+task("default", series('clean','copy:html', 'styles', 'scripts', 'copy:all'));
