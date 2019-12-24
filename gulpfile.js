@@ -44,10 +44,6 @@ task("styles", () => {
     .pipe(concat('main.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    // .pipe(autoprefixer({
-    //     browsers: ['last 2 versions'],
-    //     cascade: false
-    // }))
     .pipe(gcmq())
     .pipe(cleanCSS())
     .pipe(dest('dist'))
@@ -64,10 +60,10 @@ const scripts = [
 task("scripts", () => {
     return src(scripts)
     .pipe(concat('main.js'))
-    // .pipe(babel({
-    //     presets: ['@babel/env']
-    // }))
-    // .pipe(uglify())
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(uglify())
     .pipe(dest('dist'))
     .pipe(reload({ stream: true }));;
 })

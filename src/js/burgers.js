@@ -46,9 +46,9 @@
 
     function moveSlide(slider, numSlide) {
         const 
-            sliderItems = slider.find(".burgers__item");
-            activeSlide = sliderItems.filter(".burgers__item_avtive");
-            reqItem = sliderItems.eq(numSlide);
+            sliderItems = slider.find(".burgers__item"),
+            activeSlide = sliderItems.filter(".burgers__item_avtive"),
+            reqItem = sliderItems.eq(numSlide),
             reqIndex = reqItem.index();
             if (reqItem.length) {
                 slider.animate({
