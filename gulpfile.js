@@ -44,10 +44,10 @@ task("styles", () => {
     .pipe(concat('main.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    .pipe(gcmq())
-    .pipe(cleanCSS())
+    // .pipe(gcmq())
+    // .pipe(cleanCSS())
     .pipe(dest('dist'))
-    .pipe(reload({ stream: true }));;
+    // .pipe(reload({ stream: true }));;
 })
 
 const scripts = [
@@ -63,7 +63,7 @@ task("scripts", () => {
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(dest('dist'))
     .pipe(reload({ stream: true }));;
 })
@@ -78,6 +78,6 @@ task('server', function() {
     });
 });
 
-watch('./src/css/**/*.scss', series('styles'));
-watch('./src/js/**/*.js', series('scripts'));
+// watch('./src/css/**/*.scss', series('styles'));
+// watch('./src/js/**/*.js', series('scripts'));
 task("default", series('clean','copy:html', 'styles', 'scripts', 'copy:all'));
