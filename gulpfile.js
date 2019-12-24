@@ -15,7 +15,7 @@ const reload = browserSync.reload;
 
 task ("copy:html", () => {
     return src("src/index.html")
-    .pipe(dest("dist"))
+    .pipe(dest("./"))
     .pipe(reload({ stream: true }));;
 });
 task ("copy:all", () => {

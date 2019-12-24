@@ -165,6 +165,16 @@
         cursor:pointer;
         transition:.1s;
         }
+
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        background: #626262;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor:pointer;
+        transition:.1s;
+    }
 }
 
 .video__sound-img {
